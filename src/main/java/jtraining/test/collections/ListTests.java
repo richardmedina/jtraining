@@ -1,9 +1,11 @@
 package jtraining.test.collections;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ListTests {
@@ -51,4 +53,39 @@ public class ListTests {
         integerList.add(30);
         printList(integerList, "integerList");
     }
+
+    @Test
+    public void CompareValues(){
+        // String:interns
+        String string1 = "Hello";
+        String string2 = "Hello";
+
+        System.out.println(string1 + " == " + string2 + ": " + (string1 == string2));
+        System.out.println(string1 + " equals " + string2 + ": " + string1.equals(string2));
+    }
+
+    @Test
+    public void LinkedListTest(){
+        var expected = 2;
+        LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.add("Hello");
+        linkedList.add("World");
+
+        var item = linkedList.getFirst();
+        System.out.println("item: " + item);
+
+        Assert.assertEquals(expected, linkedList.size());
+    }
+
+    /* Obsoletes
+    @Test
+    public void VectorTest(){
+
+    }
+
+    @Test
+    public void CopyOnWriteArrayListTest(){
+
+    }
+    */
 }
