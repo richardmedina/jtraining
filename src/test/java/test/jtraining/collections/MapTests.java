@@ -1,10 +1,13 @@
-package jtraining.test.collections;
+package test.jtraining.collections;
 
 import jtraining.common.collections.Payload;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedHashMap;
+import java.util.TreeMap;
 
 public class MapTests extends BaseTest {
 

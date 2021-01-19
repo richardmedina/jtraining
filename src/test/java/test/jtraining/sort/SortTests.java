@@ -1,4 +1,4 @@
-package jtraining.test.sort;
+package test.jtraining.sort;
 
 import jtraining.impl.sort.QuickSort;
 import org.junit.Test;
