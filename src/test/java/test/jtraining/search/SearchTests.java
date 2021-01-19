@@ -1,4 +1,4 @@
-package jtraining.test.search;
+package test.jtraining.search;
 
 import jtraining.common.search.SearchDelegate;
 import jtraining.impl.search.BinarySearch;

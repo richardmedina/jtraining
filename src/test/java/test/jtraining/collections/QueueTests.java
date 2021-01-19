@@ -1,10 +1,12 @@
-package jtraining.test.collections;
+package test.jtraining.collections;
 
 import jtraining.common.collections.Payload;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 
 public class QueueTests extends BaseTest {
 

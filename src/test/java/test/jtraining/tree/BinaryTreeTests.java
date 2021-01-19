@@ -1,4 +1,4 @@
-package jtraining.test.tree;
+package test.jtraining.tree;
 
 import jtraining.impl.tree.BinaryTree;
 import jtraining.impl.tree.IntBinaryTreeNode;

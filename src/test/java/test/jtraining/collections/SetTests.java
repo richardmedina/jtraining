@@ -1,4 +1,4 @@
-package jtraining.test.collections;
+package test.jtraining.collections;
 
 import jtraining.common.collections.Payload;
 import org.junit.Assert;
