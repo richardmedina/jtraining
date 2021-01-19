@@ -12,29 +12,29 @@ public class BinaryTree implements BinaryTreeDelegate<IntBinaryTreeNode> {
         }
         else {
             IntBinaryTreeNode aux = root;
-            IntBinaryTreeNode ant = null;
+            IntBinaryTreeNode parent = null;
 
             while(aux != null){
-                ant = aux;
+                parent = aux;
                 if(node.compare(aux) == 1){
                     aux = (IntBinaryTreeNode) aux.getRightNode();
-                    if(aux == null) ant.setRightNode(node);
+                    if(aux == null) parent.setRightNode(node);
                 }
                 else {
                     aux = (IntBinaryTreeNode) aux.getLeftNode();
-                    if(aux == null) ant.setLeftNode(node);
+                    if(aux == null) parent.setLeftNode(node);
                 }
             }
         }
     }
 
     @Override
-    public void DepthFirstSearch(IntBinaryTreeNode rootNode) {
+    public void DepthFirstSearch() {
 
     }
 
     @Override
-    public void BreadthFirstSearch(IntBinaryTreeNode rootNode) {
+    public void BreadthFirstSearch() {
 
     }
 }
