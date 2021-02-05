@@ -23,6 +23,23 @@ public class SetTests extends BaseTest {
         Assert.assertEquals(expected, hashSet.size());
     }
 
+    /**
+     * HashSet has single values if you ad repeated they are replaced
+     */
+    @Test
+    public void TestHashSetTest2(){
+        HashSet<Integer> hashSet = new HashSet<>();
+        hashSet.add(10);
+        hashSet.add(20);
+        hashSet.add(10);
+        hashSet.add(30);
+        hashSet.add(10);
+
+        for(int value : hashSet){
+            System.out.println("Value: " + value);
+        }
+    }
+
     @Test
     public void LinkedHashSetTest(){
         var expected = 10;

@@ -18,12 +18,17 @@ public class MapTests extends BaseTest {
     @Test
     public void HashMapTest(){
         var expected = 10;
+        var keyToSearch = "Email1@email.com";
         HashMap<String, Payload> hashMap = new HashMap<>();
 
         for(var payload : createPayloads(expected))
             hashMap.put(payload.getEmail(), payload);
 
         hashMap.put(null, null);
+
+        if (hashMap.containsKey(keyToSearch)){
+            System.out.println("Found: " + hashMap.get(keyToSearch));
+        }
 
         Assert.assertEquals(expected + 1, hashMap.size());
     }

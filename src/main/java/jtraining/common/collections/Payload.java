@@ -29,4 +29,9 @@ public class Payload {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    @Override
+    public String toString(){
+        return String.format("{Email: %s, Password: %s}", email, password);
+    }
 }
