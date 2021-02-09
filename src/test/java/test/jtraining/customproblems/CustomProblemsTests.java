@@ -1,8 +1,6 @@
 package test.jtraining.customproblems;
 
-import jtraining.impl.customproblems.FindPeakElementProblem;
-import jtraining.impl.customproblems.LongestPalindromeProblem;
-import jtraining.impl.customproblems.MedianOfTwoSortedArraysProblem;
+import jtraining.impl.customproblems.*;
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -82,5 +80,23 @@ public class CustomProblemsTests {
         }
 
         return longestCount;
+    }
+
+    @Test
+    public void RegularExpressionMatchingTest(){
+        var s = "aab";
+        //var s = "aa";
+        var p = "c*a*b*";
+        //var p = "a";
+
+        var customProblem = new RegularExpressionMatching(s, p);
+        var result = customProblem.run();
+        System.out.println("Result: " + result);
+    }
+
+    @Test
+    public void InstertToSortedArray(){
+        var customProblem = new InsertToSortedArray();
+        customProblem.run();
     }
 }
