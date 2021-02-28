@@ -9,7 +9,7 @@ public class InsertToSortedArray implements CustomProblem<Boolean> {
         int[] array = {1, 4, 11, 30, 50};
 
         array = insertToSortedArray(100, array);
-        array = insertToSortedArray(5, array);
+        array = insertToSortedArray(0, array);
         array = insertToSortedArray(20, array);
 
         System.out.println("Array: " + array);
